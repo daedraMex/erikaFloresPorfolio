@@ -1,5 +1,8 @@
 ---
+//This is the place for server only code 
 
+const name = "Erika Flores";
+import Navbar from '../components/Nabar.astro';
 ---
 
 <html lang="en">
@@ -8,9 +11,25 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title>Erika Flores | FullStack developer</title>
+    <title> | FullStack developer</title>
   </head>
   <body>
+    <Navbar />
     <h1>Astro</h1>
+    <p>Hola {name}</p>
+    <footer>
+      <p>© 2023 {name}. All rights reserved.</p>
+      <p id="date"></p>
+    </footer>
+    <script>
+      const getDate = () => {
+        const currentYear: string = new Date().toLocaleTimeString()
+        return `Current year: ${currentYear}`;
+      };
+      window.onload = () => {
+        document.getElementById('date').textContent = getDate();
+
+      };
+    </script>
   </body>
 </html>
