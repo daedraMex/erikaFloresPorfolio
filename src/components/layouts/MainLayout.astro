@@ -1,0 +1,20 @@
+---
+interface Props{
+    title: string;
+}
+const { title } = Astro.props;
+import Navbar from '../Nabar.astro';
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{title}</title>
+  </head>
+  <body>
+     <Navbar />
+    <main>
+      <slot />
+    </main>
+  </body>
+</html>

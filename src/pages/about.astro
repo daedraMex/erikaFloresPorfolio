@@ -1,31 +1,9 @@
 ---
-import Navbar from '../components/Nabar.astro';
+import MainLayout from "../components/layouts/MainLayout.astro";
+
 
 ---
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <Navbar />
-    <h1>Contact Page</h1>
-    <p>This is the contact page.</p>
-    <footer>
-        <p>© 2023 Erika Flores. All rights reserved.</p>
-        <p id="date"></p>
-    </footer>
-    <script>
-        const getDate = () => {
-            const currentYear = new Date().toLocaleTimeString();
-            return `Current year: ${currentYear}`;
-        };
-        window.onload = () => {
-            document.getElementById('date').textContent = getDate();
-        };
-    </script>
-</body>
-</html>
+<MainLayout title="About | Erika Flores | FullStack developer">
+    <h1>About Page</h1>
+</MainLayout>
