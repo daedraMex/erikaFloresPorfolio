@@ -1,18 +1,20 @@
 ---
-import NavItem from './NavbarItem.astro';
+import NavItem from "./NavbarItem.astro";
 ---
+
 <!-- main navigation component  -->
-<nav class="mx-20 bg-(--background-secondary)  rounded-[50px] border border-white ">
+<nav
+  class="mx-20 bg-(--background-secondary) rounded-[50px] border border-white"
+>
   <div class="flex items-center justify-between text-white p-2.5">
     <!-- left navitation -->
-     <div class="flex items-center space-x-8">
+    <div class="flex items-center space-x-8">
       <NavItem text="Home" isActive={true} />
-      
+
       <NavItem text="About" />
       <NavItem text="Skills" />
-
-     </div>
-     <!-- logo  -->
+    </div>
+    <!-- logo  -->
     <div class="flex items-center justify-center">
       <a href="" class="text-2xl font-bold">Logo</a>
     </div>
@@ -22,8 +24,5 @@ import NavItem from './NavbarItem.astro';
       <NavItem text="Projects" />
       <NavItem text="Contact" />
     </div>
-
-    
   </div>
-  
 </nav>

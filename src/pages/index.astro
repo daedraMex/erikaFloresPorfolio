@@ -1,18 +1,28 @@
 ---
-//This is the place for server only code 
+//This is the place for server only code
 //components
-import MainLayout from '../components/layouts/MainLayout.astro';
+import MainLayout from "../components/layouts/MainLayout.astro";
 //styles
 import "../styles/global.css";
-
+import bgImage from "../images/bg_2.svg";
 ---
 
 <MainLayout title=" Erika Flores | FullStack developer">
-  <p>Hola</p>
-  <h1 class="text-3xl font-bold underline">
-  Hello world!
-  <section>
-    <p>Welcome to my website</p>
+  <section class="hero p-2.5 mt-9">
+    <div class="flex flex-col justify-center items-center">
+      <img src={bgImage.src} alt="Erika Flores, software engineer" />
+    </div>
+    <div class="flex flex-row justify-center bg-(--background-primary) ">
+      <divs
+        class="justify-center p-2.5 rounded-[50px] flex flex-row  border-white w-fit border-2 bg-white/10 backdrop-blur-[7.5px]"
+      >
+        <div class="py-2.5 px-5 rounded-[50px] bg-(--background-primary)">
+          <p class="text-1xl text-white">Portfolio</p>
+        </div>
+        <div class="py-2.5 px-5">
+          <p class="text-1xl text-white">Hire Me</p>
+        </div>
+      </divs>
+    </div>
   </section>
-</h1>
 </MainLayout>

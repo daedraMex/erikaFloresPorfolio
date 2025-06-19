@@ -9,7 +9,12 @@
 @import "tailwindcss";
 
 :root{
+    --text-primary: #171717;
+    --text-secondary: #FD853A;
+
     --background-secondary: #171717;
     --background-primary: #FD853A;
-
+}
+html{
+    color: var(--text-primary)
 }
