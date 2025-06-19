@@ -3,16 +3,19 @@ interface Props{
     title: string;
 }
 const { title } = Astro.props;
-import Navbar from '../Nabar.astro';
+import Navbar from '../Navbar/Nabar.astro';
 ---
 
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body>
+  <body class="bg-white pt-10">
      <Navbar />
+    
     <main>
       <slot />
     </main>

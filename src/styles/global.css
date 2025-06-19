@@ -1,0 +1,15 @@
+@font-face {
+        font-family: 'Lufga-Regular';
+        src: url('/fonts/Lufga-Regular.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+        font-display: swap;
+}
+
+@import "tailwindcss";
+
+:root{
+    --background-secondary: #171717;
+    --background-primary: #FD853A;
+
+}

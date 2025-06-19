@@ -1,37 +1,18 @@
 ---
 //This is the place for server only code 
-
+//components
 import MainLayout from '../components/layouts/MainLayout.astro';
+//styles
+import "../styles/global.css";
+
 ---
 
-<!-- <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width" />
-    <meta name="generator" content={Astro.generator} />
-    <title> | FullStack developer</title>
-  </head>
-  <body>
-   
-    <h1>Astro</h1>
-    <p>Hola {name}</p>
-    <footer>
-      <p>© 2023 {name}. All rights reserved.</p>
-      <p id="date"></p>
-    </footer>
-    <script>
-      const getDate = () => {
-        const currentYear: string = new Date().toLocaleTimeString()
-        return `Current year: ${currentYear}`;
-      };
-      window.onload = () => {
-        document.getElementById('date').textContent = getDate();
-
-      };
-    </script>
-  </body>
-</html> -->
 <MainLayout title=" Erika Flores | FullStack developer">
   <p>Hola</p>
+  <h1 class="text-3xl font-bold underline">
+  Hello world!
+  <section>
+    <p>Welcome to my website</p>
+  </section>
+</h1>
 </MainLayout>

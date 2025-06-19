@@ -1,0 +1,21 @@
+---
+interface Props{
+    text: string;
+    isActive?: boolean;
+}
+const {  text, isActive = false } = Astro.props;
+---
+<a 
+    href="#" 
+    class=`py-5 px-10 
+    ${isActive ? 
+        'bg-(--background-primary) font-bold ' 
+        : ''} 
+    rounded-[50px]
+    hover:font-bold 
+    hover:bg-(--background-primary)
+    transition-all 
+    duration-600 ease-in-out
+    `>
+    {text}
+</a>
