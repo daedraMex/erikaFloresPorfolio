@@ -45,3 +45,5 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+
+## the link for the figma file https://www.figma.com/design/mEiKoUElcVbv0LtArFfcuk/Portfolio%7C-Personal-Portfolio-%7C-5---Community-?m=auto&t=i7f8FWmXISIHrnxi-1

@@ -1,12 +1,13 @@
+@import "tailwindcss";
+
 @font-face {
         font-family: 'Lufga-Regular';
-        src: url('/fonts/Lufga-Regular.ttf') format('truetype');
+        src: url('/fonts/LufgaRegular.ttf') format('truetype');
         font-weight: normal;
         font-style: normal;
         font-display: swap;
 }
 
-@import "tailwindcss";
 
 :root{
     --text-primary: #171717;
