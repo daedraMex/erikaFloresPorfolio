@@ -4,28 +4,87 @@
 import MainLayout from "../components/layouts/MainLayout.astro";
 //styles
 import "../styles/global.css";
-import bgImage from "../images/bg_2.svg";
+import { Image } from "astro:assets";
+import profilePicture from "../images/erikaFlores.png";;
+import background from "../images/ellipse.svg";
+
+import vector2 from "../images/vector3.svg"
+import vector1 from "../images/vector1.svg";
 ---
 
 <MainLayout title=" Erika Flores | FullStack developer">
-  <section class="hero p-2.5 mt-9">
+ 
+ <section id="hero" class="min-h-screen flex flex-col justify-center items-center px-4 mt-14">
+    <div class="text-center max-w-3xl relative">
+      <!-- Hello badge -->
+      <div class="absolute left-1/2 -top-6 -translate-x-1/2 bg-white text-sm border border-gray-300 px-4 py-1 rounded-full shadow">
+        Hello!
+      </div>
 
-    <h1 class=" text-4xl">This text uses the custom font.</h1>
-    <h2 class="text-3xl font-custom">Erika Flores gonale</h2>
-    <div class="flex flex-col justify-center items-center">
-      <img src={bgImage.src} alt="Erika Flores, software engineer" />
+      <!-- Name + Title -->
+      <h1 class="text-4xl sm:text-5xl font-bold leading-tight mt-12 font-urbanist">
+        I’m <span class="text-blue-500">Erika</span>,<br />
+        <span class="text-black">Software developer</span>
+      </h1>
+
+      <!-- Decorative lines -->
+      <div class="absolute top-10 left-0 text-orange-400 text-4xl">〰️</div>
+      <!-- <div class="absolute top-10 right-0 text-orange-400 text-4xl rotate-180">〰️</div> -->
+      <Image src={vector2} alt="Background" class="absolute top-9 right-20" />
+
+
+      <!-- Image -->
+      <div class="mt-10 relative z-10">
+        <div class="relative w-[300px] h-[300px] mx-auto flex items-center justify-center">
+          <Image src={background} alt="Background" class="z-0 absolute" />
+          <Image src={profilePicture} alt="Erika" class=" z-10 absolute" />
+        </div> 
+          <!-- <Image src={vector1} alt="Background" class="z-0 absolute  top-0 left-0" /> -->
+
+      </div>
+
+      <!-- Buttons -->
+      <div class="mt-20 flex justify-center gap-4 ">
+        <button class="bg-orange-500 text-white px-6 py-2 rounded-full shadow hover:bg-orange-600 transition font-custom">
+          Projects
+        </button>
+        <button class="border border-gray-400 text-gray-700 px-6 py-2 rounded-full hover:bg-gray-100 transition font-custom">
+          Contact
+        </button>
+      </div>
     </div>
-    <div class="flex flex-row justify-center bg-(--background-primary) ">
-      <divs
-        class="justify-center p-2.5 rounded-[50px] flex flex-row  border-white w-fit border-2 bg-white/10 backdrop-blur-[7.5px]"
-      >
-        <div class="py-2.5 px-5 rounded-[50px] bg-(--background-primary)">
-          <p class="text-1xl text-white">Portfolio</p>
-        </div>
-        <div class="py-2.5 px-5">
-          <p class="text-1xl text-white">Hire Me</p>
-        </div>
-      </divs>
-    </div>
+
+  
+  </section>
+  <section id="myExperience" class="min-h-screen px-4">
+      <h1 class="text-4xl sm:text-5xl font-bold leading-tight mt-12 font-urbanist">
+        My Experience
+      </h1>
+  </section>
+  <section id="mySpecialties" class="min-h-screen">
+    <h1 class="text-4xl sm:text-5xl font-bold leading-tight mt-12 font-urbanist">
+      My Specialties
+    </h1>
+  </section>
+  <section id="myProjects" class="min-h-screen">
+    <h1 class="text-4xl sm:text-5xl font-bold leading-tight mt-12 font-urbanist">
+      Recent Projects
+    </h1>
+  </section>
+  <section id="testimonials" class="min-h-screen">
+    <h1 class="text-4xl sm:text-5xl font-bold leading-tight mt-12 font-urbanist">
+      What they says
+    </h1>
+  </section>
+  <section id="readMyBlog" class="min-h-screen">
+    <h1 class="text-4xl sm:text-5xl font-bold leading-tight mt-12 font-urbanist">
+      Read my blog
+    </h1>
+  </section>
+  <section id="contact" class="min-h-screen">
+    <h1 class="text-4xl sm:text-5xl font-bold leading-tight mt-12 font-urbanist">
+        Reach out me 
+      </h1>
+
   </section>
 </MainLayout>

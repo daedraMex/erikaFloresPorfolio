@@ -5,7 +5,17 @@ export default {
     extend: {
       fontFamily: {
         'custom': ['Lufga-Regular', 'sans-serif'],
+        'urbanist': ['Urbanist', 'sans-serif'],
       },
+       keyframes: {
+        doodle: {
+          '0%, 100%': { opacity: 0, transform: 'scale(0.5)' },
+          '50%': { opacity: 1, transform: 'scale(1)' },
+        }
+      },
+      animation: {
+        'doodle-animation': 'doodle 2s ease-in-out infinite',
+      }
     },
   },
   plugins: [],

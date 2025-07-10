@@ -7,7 +7,12 @@
         font-style: normal;
         font-display: swap;
 }
-
+@font-face {
+    font-family: 'Urbanist';
+    src: url('/fonts/Urbanist.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 
 :root{
     --text-primary: #171717;
